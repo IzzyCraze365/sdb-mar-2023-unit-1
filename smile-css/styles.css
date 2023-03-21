@@ -1,0 +1,65 @@
+body{
+background-color: #eee;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+
+}
+
+.face{
+    background-color: yellow;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: solid 2px black;
+}
+
+.eye{
+    width:6px;
+    height: 6px;
+    background-color: white;
+    position: relative; /*relative to the parent*/
+    border: solid 1px black;
+    border-radius: 3px;
+}
+
+.left{
+    left: 20px;
+    top: 26px;
+}
+
+.right{
+    left: 46px;
+    top: 18px;
+}
+
+.mouth{
+    width:30px;
+    height: 10px;
+    background-color: lightcoral;
+    position: relative; /*relative to the parent*/
+    border: solid 2px black;
+    border-radius: 0px 0px 45px 45px;
+    left: 20px;
+    top: 30px;
+}
+
+.pupil{
+    width: 1px;
+    height: 1px;
+    background-color: black;
+    position:relative; /*relative to the parent*/
+    top: 1px;
+    left: 1px;
+    border: solid 1px black;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+}
+
