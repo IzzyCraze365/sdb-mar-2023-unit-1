@@ -1,6 +1,6 @@
 ## Create an Initial Repository
 
-Use the command in the terminal `git init` YOU MUST BE IN THE DIRECTORY YOU ARE WANTING TO TRACK
+Use the command in the terminal `git init` YOU MUST BE IN THE DIRECTORY YOU ARE WANTING TO TRACK (You will only need to perform this once.  Never for existing Repositories.)
 
 - In VS Code you can right click the folder you want to start tracking and choose `Open in Intergrated Terminal`
 
