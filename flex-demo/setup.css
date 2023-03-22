@@ -1,0 +1,24 @@
+/* Lesson Day 003 */
+/* Flex Demo */
+
+/* imported into index.css */
+
+body{
+    background-color: hotpink;
+}
+
+.flex-container > div { /*targets each div*/
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+/* How to Target Specific "divs" without specifying a class*/
+.flex-container > div:nth-child(1){/*targets the first div*/
+    background-color: lightblue;
+}
+.flex-container > div:nth-child(2){/*targets the second div*/
+    background-color: seagreen;
+}
+.flex-container > div:nth-child(3){/*targets the first div*/
+    background-color: mediumslateblue;
+}

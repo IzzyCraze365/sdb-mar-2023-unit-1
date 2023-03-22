@@ -1,0 +1,50 @@
+/* Lesson Day 003 */
+/* Flex Demo */
+
+/* imported into index.css */
+
+header {
+    height: 400px; /*! needs a defined height because it is a container */
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;  /* centers left to right */
+    align-items: center; /* centers top to bottom */
+    text-align: center;
+}
+
+
+.flex-container{
+    display: flex; /* anything in "flex" is put into a single row */
+    border: 2px black solid;
+    /* flex-direction: row;
+    justify-content: space-evenly; */
+}
+
+
+/* ! Witness the POWER of Flex */
+.flex-container >div {
+   flex: 1;
+}
+.flex-container > .about {
+    flex: 2;
+ }
+ 
+
+/* ! Shifting div's with margin-left auto */
+/* .about{
+    margin-left: auto;
+} */
+
+/* .logout{
+    margin-left: auto;
+} */
+
+
+/* ! Content layout across the flexbox */
+/* justify-content:
+    flex-start
+    flex-end
+    center = center is great for images
+    space-around
+    space-between = maxes the space between each unit
+    space-evenly = center is great for images*/
