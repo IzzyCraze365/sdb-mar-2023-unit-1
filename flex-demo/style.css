@@ -3,6 +3,7 @@
 
 /* imported into index.css */
 
+
 header {
     height: 400px; /*! needs a defined height because it is a container */
     background-color: lightblue;
