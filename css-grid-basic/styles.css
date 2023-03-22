@@ -1,3 +1,5 @@
+/* CSS Grid Basic */
+
 /* COMMENT GOES IN HERE */
 /* CSS Variables */
 :root{
@@ -19,9 +21,9 @@ body{
     display: grid; /* sets the display as a grid */
     gap: 10px; /* spaces everything out a bit */
     grid-template-columns: repeat(12, 1fr); /* Repeating option to make a full grid */
-    /* grid-template-columns: 1fr 2fr 1fr; /* fr = Fragment */ */
+    /* grid-template-columns: 1fr 2fr 1fr; this does the same as above*/
+    /*fr = Fragment */
     grid-template-rows: 350px auto 100px;
-    
 }
 
 .header{

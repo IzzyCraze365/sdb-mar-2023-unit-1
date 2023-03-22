@@ -1,0 +1,45 @@
+/* CSS Grid Template */
+
+/* CSS Variables */
+:root {
+  --primary: white; /* uses this variable when called in CSS */
+  --primaryHover: burlywood; /* uses this variable when called in CSS */
+}
+
+/* Classes */
+.box {
+  background-color: tomato;
+  color: var(--primary);
+  padding: 20px;
+  font-size: 150%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 400px auto 400px; /* 1st & 3rd column is 400px, middle auto sizes */
+  gap: 10px;
+  grid-template-areas: /* this is how you organize your website */
+    "header header header"
+    "sidebar content sidebar2"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}

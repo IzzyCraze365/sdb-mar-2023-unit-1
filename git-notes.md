@@ -33,3 +33,16 @@ Use the command in the terminal `git commit -m "YOUR MESSAGE HERE" `
 2. `git status` - to verify (optional)
 3. `git commit -m "ADD NEW MESSAGE HERE" ` - Ex of messages "added styling" or "fixed bug"
 4. `git push origin main`
+
+# Shortcuts
+
+You can right-click on the folder in your explorer (of VS Code) and select `Open in Intergrated Terminal`
+
+Remember to update your GitHub often so you do not lose any files.
+
+# Notes about the Button
+`Commit` saves a local copy of your files
+
+`Commit & Push` saves a local copy and pushes the files to the cloud
+
+`Commit & Sync` saves a local copy and syncs up any other files from collaborators
