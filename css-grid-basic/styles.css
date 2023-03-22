@@ -1,0 +1,68 @@
+/* COMMENT GOES IN HERE */
+/* CSS Variables */
+:root{
+    --primary: lightblue; /* uses this variable when called in CSS */
+    --primaryHover: burlywood; /* uses this variable when called in CSS */
+}
+
+body{
+    font-size: 20px;
+    margin: 0;
+}
+
+* {
+
+}
+
+.container{
+    height: 100%;
+    display: grid; /* sets the display as a grid */
+    gap: 10px; /* spaces everything out a bit */
+    grid-template-columns: repeat(12, 1fr); /* Repeating option to make a full grid */
+    /* grid-template-columns: 1fr 2fr 1fr; /* fr = Fragment */ */
+    grid-template-rows: 350px auto 100px;
+    
+}
+
+.header{
+    font-family: 'Roboto', sans-serif; /* GOOGLE FONTS */
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1; /* Going all the way to the end, 1 more than  */
+    background-color: var(--primary); /* calls the color defined above */
+    font-size: 4rem; /* 2em = double the standard font size for the document. The default font size is 16 for HTML (unless otherwise defined in the body), so 2em is font size 32. rem based off parent element */
+    line-height: 350px;
+    background-image: url("https://images.unsplash.com/photo-1522836419305-eee4fc982fa5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1805&q=80");
+    opacity: 0.6;
+    color: white;
+ }
+
+.menu{
+    grid-column: 1/4; /* same as the grid-colum-start +  grid-column-end */
+}
+
+.content{
+    grid-column: 4/-1; /* goes from column 4 to the end */
+}
+
+.footer{
+    grid-column: 1/13; /* stretches from the beginning to the end of the grid */
+    text-align: center;
+}
+.menu > ul { /* for any menus with a unordered list "ul" */
+    list-style-type: none; /* removes bullet points from list */
+}
+
+.menu > ul > li {
+    margin: 15px 10px;
+    background-color: var(--primary);
+    padding: 10px; /* spaces buttons  */
+    text-align: center; /* this centers the buttons */
+    border-radius: 10px; /* rounded button shape  */
+    border: solid black 2px; /* button border  */
+}
+
+.menu > ul > li:hover { /* make the buttons glow */
+    cursor: pointer;
+    background-color: var(--primaryHover);
+}
