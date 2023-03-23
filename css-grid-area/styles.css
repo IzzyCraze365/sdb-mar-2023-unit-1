@@ -43,3 +43,39 @@
 .footer {
   grid-area: footer;
 }
+
+
+/* Code from Class 004 */
+/* This will change the properties of the Screen after the display screen shrinks */
+@media screen and ( max-width:790px){
+  body{
+    background-color: lightgreen;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 10px;
+    grid-template-areas: /* this is how you organize your website */
+      "header header "
+      "sidebar content"
+      "sidebar2 ." /* thperiod leave the spot on the grid blank */
+      "footer footer";
+  }
+}
+
+@media screen and ( max-width:480px){
+  body{
+    background-color: black;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 10px;
+    grid-template-areas: /* this is how you organize your website */
+      "header"
+      "content"
+      "sidebar"
+      "sidebar2"
+      "footer";
+  }
+}
