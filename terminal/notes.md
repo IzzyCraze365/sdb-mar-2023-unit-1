@@ -7,7 +7,7 @@ Remember Syntax is important for capitalization `documents` and `Documents` are 
 
 To see what directory we are currently in use the following command: `pwd`
 
-To get a list of files and folders that are in the current directorr, use the following command: `ls`
+To get a list of files and folders that are in the current directory, use the following command: `ls`
 
 To change to a new directory use the following command: `cd [name of folder]`
 
